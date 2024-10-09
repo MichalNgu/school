@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    display: flex;
+}
+
+.gg {
+    display: flex;                   
+    justify-content: center;         
+    background-color: white;
+}
