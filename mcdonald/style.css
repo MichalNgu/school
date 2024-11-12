@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8d142;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #f3caca;
+    width: 800px;
+    height: 85vh;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+.header {
+    height: 150px;
+    background: url('/mcdonald/img/mc-logo.jpg') no-repeat center center;
+    background-size: 1000px 300px;
+    border-radius: 8px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+}
+
+.side-menu {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 15px;
+}
+
+.side-menu-item img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.side-menu-item img:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3caca;
+    border-radius: 12px;
+    transition: background-color 0.2s ease;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.menu-item:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-item img {
+    width: 80px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 30%;
+    transition: transform 0.2s ease;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.button {
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cancel {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.cancel:hover {
+    background-color: #e04343;
+}
+
+.add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.add:hover {
+    background-color: #45a049;
+}
