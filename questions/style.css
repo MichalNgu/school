@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #cebebe;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.quiz-container {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    background: #f3e1e1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+label:hover {
+    background: #e6d5d5;
+}
+
+input[type="radio"] {
+    accent-color: rgb(255, 0, 0);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b6e2d;
+}
+
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+.correct {
+    background-color: #aaffaa !important;
+    border: 2px solid green;
+}
+
+.incorrect {
+    background-color: #ffaaaa !important;
+    border: 2px solid red;
+}
