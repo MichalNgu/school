@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ukázka filtrování dat</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <h1>filtrování dat</h1>
+
+  <nav>
+    <a href="#tabulka">Tabulka</a>
+    <a href="#formular">Formulář</a>
+  </nav>
+
+  <section id="tabulka">
+    <h2>Tabulka</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>
+            Město<br />
+            <input type="text" id="filterCityInput" placeholder="Filtrovat města..."/>
+          </th>
+          <th>Počet obyvatel</th>
+        </tr>
+      </thead>
+      <tbody id="cityTableBody">
+        <tr><td>1</td><td>Praha</td><td>1300000</td></tr>
+        <tr><td>2</td><td>Brno</td><td>380000</td></tr>
+        <tr><td>3</td><td>Ostrava</td><td>290000</td></tr>
+        <tr><td>4</td><td>Plzeň</td><td>170000</td></tr>
+        <tr><td>5</td><td>Liberec</td><td>105000</td></tr>
+        <tr><td>6</td><td>Rumburk</td><td>10000</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="formular">
+    <h2>Formulář</h2>
+    <input type="text" id="selectFilterInput" placeholder="Filtrovat města ve výběru..."/>
+    <form id="cityForm">
+      <select id="citySelect">
+        <option>Praha</option>
+        <option>Brno</option>
+        <option>Ostrava</option>
+        <option>Plzeň</option>
+        <option>Liberec</option>
+        <option>Rumburk</option>
+      </select>
+      <button type="submit">Odeslat</button>
+    </form>
+    <div id="resultMessage"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
